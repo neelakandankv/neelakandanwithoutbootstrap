@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width" initial-scale="1">
+
+        <style>
+                *{margin: 5px;}
+                    
+            
+            div
+            {
+                 padding: 6px;
+            }
+            
+            .div1
+
+            {
+                
+                position: fixed;
+                image-orientation: flip;
+                height: 100vh;
+                width: 20%;
+                background-color:gray;
+                 
+            }
+
+            ul {
+                list-style: none;
+                 text-align: center;
+                padding: 15px;
+                
+            }
+
+            li a
+
+            {
+                display: block;
+                color: whitesmoke;
+ 
+
+            }
+            li a:hover.active
+            {
+                
+                color:white;
+                background-color:yellowgreen
+
+            }
+             
+            li a:hover:not(.active) {
+                    background-color: #555;
+                     color: white;
+                                            }
+
+                                            img {
+                max-width: 100%;
+            }
+            .row1 
+                {
+                   
+                width: 75%;
+                float:right;
+                
+               
+               
+                            }
+                
+                            .container {
+                                            position: absolute;
+                                            text-align: center;
+                                            background-color: black;
+                                            font-weight: bold;     
+                                                                     
+                                                }
+                                                    
+                                      .center {
+
+                                          position: absolute;
+                                          color:blue;
+                                          margin-left: 20%;
+                                          margin-top: -45%;
+                                                                               
+                                      }   
+
+                                    .btn {
+                                        border: 2px solid lightgreen;
+                                        border-radius: 5px;
+                                        background-color:lightgreen;
+                                        color:blue;                                        
+                                        margin-left: 180px;
+                                         padding: 14px 28px;
+                                            font-size: 10px;
+                                        cursor: pointer;
+                                        
+                                                    } 
+                                    
+                              .row2
+
+                                        {
+                                          
+                                              width: 80%;
+                                             border-top: thin;color: rgb(24, 89, 230);
+                                            text-align-last: center;  }                                      
+
+                                .row3 {     
+                                            margin-left: 25px;
+                                             margin-top: -10px;
+                               
+                                            width: 80%;
+                                            height: 35px;  
+                                            background-color:salmon;}
+                                .row4{
+                                        margin-left: 5px;
+                                                                              
+                                        display:flex;
+                                        flex-wrap: wrap;   }                         
+                                       
+                            .row4 .col1{             
+                                       
+                                       
+                                         width: 28%;   
+                                        float: left;   
+                                        padding: 10px; }                           
+                                                            
+                                        .row4 .col2{             
+                                       
+                                       
+                                       width: 28%;   
+                                      float: left;   
+                                      padding: 10px; }
+                                          
+                                      .row4 .col4{             
+                                       
+                                       
+                                       width: 28%;   
+                                      float: left;   
+                                      padding: 10px; }           
+
+                                    
+
+                                   .row5 .col5{             
+                                       
+                                       
+                                       width: 80%;   
+                                      float: left;   
+                                      padding: 25px; } 
+
+                                  
+                                         
+                        
+                                    
+                                  .row8{ 
+                                        width: 75%;
+                                        float: left;
+                                        padding: 25px;
+                                        color:black;
+                                        background-color:white;
+                                        margin-left: 20%;                                   
+                                        margin-top: -5%;
+                               
+                               
+                                  }
+
+
+                                  .meter  {
+                                         box-sizing: content-box;
+                                             height: 35px; 
+                                             width: 60%;
+                                         position: relative;
+                                             background: #555;
+                                            border-radius: 15px;
+                                             padding: 5px;
+                                              
+  
+                                                        }
+                                    .meter > span {
+                                            display:block;
+                                                height: 70%;
+                                                background-color: rgb(43, 194, 83);
+                                                        text-align: center;}
+     
+.row9{
+    background-color: white;
+                display: flex;
+                justify-content: space-around;
+                color: darkred;
+                float: left;
+                margin-left: 200px;
+            }
+            .row9.col12, .col13, .col14{
+                background-color: white;
+                width: 20%;
+                padding: 10px;
+
+            }
+            .row10{
+                background-color: white;
+                display: flex;
+                justify-content: space-around;
+                color: darkred;
+                float: left;
+                margin-left: 200px;
+                
+            }
+            .row10 .col15, .col16, .col17{
+                background-color: white;
+                width: 25%;
+                padding: 10px;}
+
+ 
+.row11 { 
+    
+        width: 80%;
+         
+}
+
+
+.input[type=text], select, textarea {
+  
+  border-radius: 2px;
+  box-sizing: border-box;
+  
+ 
+}
+.container {
+    margin-left: 200px;
+    background-color: white;
+}
+
+.input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 8px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color:pink;
+}
+
+
+ 
+
+
+ 
+    
+     
+    
+ 
+
+[contenteditable] {
+  outline: 0px solid transparent;
+}
+ 
+             .clear{
+                                                          clear:both;
+                                                             }
+                                                             
+</style>
+</head>
+
+
+<body>
+    
+     <div class="div1">
+
+        <img src="frenshfashion.jpg" style="width: 100%;">
+
+
+
+        <ul>
+            <li><a class="active">Home</a></li>
+            <li><a> About Us</a></li>
+            <li><a >Service</a></li>
+            <li><a>Portfolio</a></li>
+            <li><a>Contact</a></li>
+          </ul>
+        
+     </div>
+
+     <div class="clear">
+                
+    </div>
+    
+
+     <div class="row1">
+
+         <img src="bg.jpg"  width="100%"   >  
+
+         <div class="center"> <h2>Responsive Layout</h2>  
+
+           <P>maintenant vous voyez les différents designs et styles de <BR>mise en page Web <br>Here we go ! <br>   <button class="btn read more ">Read MORE</button>
+        </div>        
+
+      
+         
+         <div class="clear">  
+        </div>
+        
+
+        <div class="row2">
+         
+          
+                <h3> Welcome to Template </h3>  
+                <P>nous sommes à la pointe de l'innovation pour apporter le meilleur<br> des modèles et des technologies aux clients 
+                    - du summum de la résolution, du contraste et de la couleur,
+                     aux expériences utilisateur immersives et à la convivialité inégalée.</P>
+                     <div class="clear"></div>
+
+       </div>
+
+       <hr>
+       <div class="clear">  
+    </div>
+       <div class="row3">  About Us </div>   
+
+
+       <div class="row4"> 
+       
+        <div class="row4 col1"> <image src ="ceo.jpg" width="150px" height="250px"> ISHA CEO   </image></div> 
+        <div class="row4 col2"> <image src="cfo.jpg" width="150px" height="250px">NISHA CFO</image> </div> 
+        <div class="row4 col4"> <image src="cto.jpg"width="150px" height="250px">RISHA  CTO</image></div> 
+        <div class="p"> <p> <B> </B>  <B></B> <L></L> </P>    
+       
+    </div>
+    <div class="clear">  
+    </div> </div> 
+
+    <div class="row5 col5"> 
+        <hr>
+    <h1> Our Management Team </h1>
+    
+    <P>  <image src ="ourteam.jpg"width="250px" height="150px" Align="right"></image> Isha graduated from Illinois State University, Isha brings to us nearly 10 years of Digital and web development  experience
+        and a proven ability to integrate best practices into emerging businesses. Websites, smartphones and digital marketing all 
+        came of age as the proud redbird worked as a district marketing manager for Nileson Media and then marketing manager for Wall steer Newspaper Group,
+         both in Chicago. Isha helped these companies navigate sea changes in the newspaper industry and return to profitability by developing imaginative
+          and synergistic marketing campaigns. We expect her to replicate these efforts at Write-On Marketing, 
+        at least when she's not busy critiquing the latest creations at her family's award-winning Illinois winery.
+        
+        </P> 
+    </div> </div>
+    
+
+<div class="clear"></div>  </div>
+    
+    <div class="row8">
+        
+    <hr>
+   
+
+                <h1>Service</h1>  
+                <P >Our Skills   - Test our skills - you can modify the below content  Yes i like the the Website </P>
+                      <br>
+              <P contenteditable="true">  Les compétences en conception réactive et mobile sont très importantes.La conception mobile peut inclure une conception réactive, mais comprend également la création de conceptions distinctes
+             spécifiques aux mobiles. Parfois, l'expérience que vous voulez qu'un utilisateur ait lorsqu'il visite votre site sur un ordinateur
+              de bureau est totalement différente de ce que vous voulez qu'il voit lorsqu'il visite depuis son smartphone, et dans ces cas, il est logique que 
+              le site mobile soit complètement différent. Un site Web bancaire proposant des services bancaires en ligne, par exemple, bénéficierait d'un site mobile
+               distinct permettant aux utilisateurs de visualiser  des éléments tels que l'emplacement de la banque la plus 
+               proche et une vue simplifiée du compte (car les écrans mobiles sont plus petits).  
+            </P><div>
+               <div class="meter">
+                <span style="width: 85%"> Contet creation 85 %</span>  
+                
+            </div> </div>
+            <div class="meter">
+                <span style="width: 95%">Web developing 95%</span>
+            </div> </div>
+            
+        
+        
+    </div>
+
+            <div class="clear">  
+    
+            </div> 
+
+
+            <hr>
+                    
+                 
+                </div>
+                <div class="clear">
+                    </div>
+
+            <div class="row9">          
+
+                        <div class="col12" >
+                            <img src="l1.jpg"> <P> Education </P>
+                            
+                        </div>
+                        <div class="col13">
+                            <img src="l2.jpg"> <P>Digital</P>
+                            
+                        </div>
+                        <div class="col14">
+                            <img src="l3.jpg"> <P>Photography </P>
+                          
+                        </div>
+                        <div class="clear">
+                        
+                        </div>
+
+                    </div>
+
+                    <div class="clear">
+
+    
+                        <div class="row10">
+
+
+                            <div class="col15" >
+                                <img src="l1.jpg"> <P> Education </P>
+                                
+                            </div>
+                            <div class="col16">
+                                <img src="l2.jpg"> <P>Digital</P>
+                                
+                            </div>
+                            <div class="col17">
+                                <img src="l3.jpg"> <P>Photography </P>                              
+                            </div>
+
+                            <div class="clear">
+                                
+                            </div> </div>
+                           
+                           <hr>
+                                                  
+       
+                            <div class="mapouter"> <P>Contact Us</P><div class="gmap_canvas"><iframe class="gmap_iframe" width="60%" frameborder="0" 
+                                scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=200&amp;height=300&amp;hl=en&amp;q=hyderabad&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+                            
+                            </iframe><a href="https://www.bgmi.org/"></a></div>
+
+                            <style>.mapouter{position:relative;text-align:right;width:80%;height:300px;}.gmap_canvas {overflow:hidden;background:none!important;width:80%;height:300px;}.gmap_iframe {
+                                height:300px!important;}</style></div>                           
+                        </div> </div>
+ 
+ 
+                            <div class="container">    
+                                           
+                                 
+                                <label for="name"> Name *</label> 
+                                <input type="text" id="name" name="name" placeholder = " Enter your Name ">
+                                <label for="Email"> Email*</label>
+                                <input type="text" id="Email" name="Email" placeholder= "Enter your abz@bbb.com">  <br>
+                                <label for="fname"> Subjet</label>
+                                <input type="text" id="Subject" name="Subject"Placeholder="Crisp of your Message "> <br>
+                                <textarea>  Message here...</textarea>
+                                
+                            
+                              </div> </div>
+                              <div class="clear">
+
+                              </div>
+
+                              <div class="row14">
+                                  
+                                  <input type="submit" value="Send Message">
+                                </div>
+
+
+                              <div class="clear">
+                            
+                            </div> </div>
+
+
+                            
+
+                            
+                            <div class="clear">
+                            
+                            </div> </div>-->
+                            </body>       
+                            
+                            </html>
+
+            
